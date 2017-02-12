@@ -3,6 +3,7 @@ print(a)
 
 
 def singleton(cls):
+    "It prevents the creation of an object more than once"
     instances = {}
     def getinstance():
         print("inst", instances)
@@ -13,10 +14,12 @@ def singleton(cls):
 
 @singleton
 class myClass:
+    "mockup for singletone test"
     pass
 
 @singleton
 class myClass1:
+    "mockup for singletone test"
     pass
 
 obj1 = myClass()
