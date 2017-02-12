@@ -13,6 +13,7 @@ class table(furniture):
         self.size = 1.5
 
 def new_furniture():
+    "furniture fuctory"
     answer = input("select new type of furniture")
     if answer == "ch":
         return chair()
@@ -22,11 +23,11 @@ def new_furniture():
         return None
 
 
-res=[]
+res = []
 while 1:
     obj = new_furniture()
     if obj is None:
         break
     res.append(obj)
 
-print("flat ",res)
+print("flat ", res)
