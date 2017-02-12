@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 class iterators:
     "implementation of the iterators"
     def __init__(self, lst=[]):

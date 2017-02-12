@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 class furniture:
     def __init__(self):
         self.size = 0

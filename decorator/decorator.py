@@ -1,19 +1,17 @@
 class Man():
-    """Human"""
     def __init__(self, name):
         self._name = name
 
-class Jetpack():
-    """Реактивный ранец"""
+class make():
     def __init__(self, man):
         self._man = man
 
-    def fly(self):
-        # покаызываем функциональность объекта  возможность летать
-        print('{} летит на реактивном ранце!'.format(self._man._name))
+    def say(self):
+        # shows the functionality of the object to say
+        print('{} , say hi'.format(self._man._name))
 
 
-man = Man('Виктор')
+man = Man("Niko")
 
-man_jetpack = Jetpack(man)
-man_jetpack.fly()  # Виктор летит на реактивном ранце!
+man_make = make(man)
+man_make.say()
